@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -34,6 +34,15 @@ jobs:
         run: npm run build
         env:
           CI: true
+
+      - name: Verify build output
+        run: |
+          echo "Checking build output..."
+          ls -la out/
+          echo "Checking CSS files..."
+          find out -name "*.css" -type f
+          echo "Checking index.html..."
+          test -f out/index.html && echo "index.html exists" || echo "index.html MISSING!"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
