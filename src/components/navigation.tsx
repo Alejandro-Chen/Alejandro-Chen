@@ -17,7 +17,7 @@ export function Navigation() {
     <nav className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
       scrolled ? "bg-slate-950/90 backdrop-blur-md border-b border-slate-800/50" : "bg-transparent"
     }`}>
-      <div className="container mx-auto px-4">
+      <div className="container px-4 md:px-8 max-w-7xl mx-auto">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="text-xl font-bold gradient-text">Chen Qi</a>
           <div className="hidden md:flex items-center gap-8">

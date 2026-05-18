@@ -57,7 +57,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-12 bg-slate-950 border-t border-slate-800/50">
-        <div className="container mx-auto px-4">
+        <div className="container px-4 md:px-8 max-w-7xl mx-auto">
           <div className="text-center">
             <p className="text-slate-400 mb-2">陈淇 | 机械工程师 · 机器人竞赛导师</p>
             <p className="text-slate-500 text-sm">

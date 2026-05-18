@@ -90,7 +90,7 @@ function getLevelBadge(level: string) {
 export function SkillsSection() {
   return (
     <section className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-8 max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-cyan-500/50 text-cyan-400">
@@ -104,7 +104,7 @@ export function SkillsSection() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {skillCategories.map((category) => (
             <Card 
               key={category.title} 

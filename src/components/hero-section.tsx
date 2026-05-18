@@ -21,7 +21,7 @@ export function HeroSection() {
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-500/20 rounded-full blur-[128px]"></div>
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-blue-600/20 rounded-full blur-[128px]"></div>
 
-      <div className="container px-4 md:px-6 relative z-10">
+      <div className="container px-4 md:px-8 max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col items-center text-center space-y-8">
           {/* Badge */}
           <Badge variant="outline" className="px-4 py-1.5 text-sm border-cyan-500/50 text-cyan-400 bg-cyan-500/10 animate-fade-in">

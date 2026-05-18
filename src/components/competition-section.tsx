@@ -97,7 +97,7 @@ function getAwardBadge(awardLevel: string) {
 export function CompetitionSection() {
   return (
     <section className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-8 max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-cyan-500/50 text-cyan-400">
@@ -111,7 +111,7 @@ export function CompetitionSection() {
         </div>
 
         {/* Competition Cards */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {competitions.map((comp) => (
             <Card 
               key={comp.id} 

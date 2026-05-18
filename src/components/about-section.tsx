@@ -30,8 +30,8 @@ const aboutItems = [
 export function AboutSection() {
   return (
     <section className="py-24 bg-slate-900/50">
-      <div className="container px-4 md:px-6">
-        <div className="max-w-4xl mx-auto">
+      <div className="container px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <Badge variant="outline" className="mb-4 border-cyan-500/50 text-cyan-400">
