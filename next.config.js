@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/Alejandro-Chen',
+  assetPrefix: '/Alejandro-Chen',
+  trailingSlash: true,
   distDir: 'out',
 };
 
